@@ -1,0 +1,34 @@
+$date
+	Fri Sep 06 10:26:44 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module semaforo_tb $end
+$var wire 1 ! VerdeB $end
+$var wire 1 " VerdeA $end
+$var reg 1 # A $end
+$scope module uut $end
+$var wire 1 # A $end
+$var wire 1 " VerdeA $end
+$var wire 1 ! VerdeB $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0#
+0"
+1!
+$end
+#20
+0!
+1"
+1#
+#40

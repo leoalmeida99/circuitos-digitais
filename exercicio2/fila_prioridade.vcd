@@ -1,0 +1,62 @@
+$date
+	Fri Sep 06 11:31:59 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module fila_prioridade_tb $end
+$var wire 1 ! s3 $end
+$var wire 1 " s2 $end
+$var wire 1 # s1 $end
+$var reg 1 $ Alexa $end
+$var reg 1 % PC $end
+$var reg 1 & TV $end
+$scope module uut $end
+$var wire 1 $ Alexa $end
+$var wire 1 % PC $end
+$var wire 1 & TV $end
+$var wire 1 # s1 $end
+$var wire 1 " s2 $end
+$var wire 1 ! s3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#20
+1!
+1$
+#40
+0!
+1"
+0$
+1%
+#60
+1$
+#80
+0"
+0$
+0%
+1#
+1&
+#100
+1$
+#120
+0$
+1%
+#140
+1$
+#160

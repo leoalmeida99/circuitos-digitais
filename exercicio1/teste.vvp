@@ -1,0 +1,43 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000248731085c0 .scope module, "semaforo_tb" "semaforo_tb" 2 4;
+ .timescale -9 -9;
+v000002487310df40_0 .var "A", 0 0;
+v0000024873285610_0 .net "VerdeA", 0 0, L_000002487310dfe0;  1 drivers
+v00000248732856b0_0 .net "VerdeB", 0 0, L_000002487310e150;  1 drivers
+S_0000024873285480 .scope module, "uut" "semafaro" 2 8, 3 1 0, S_00000248731085c0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /OUTPUT 1 "VerdeA";
+    .port_info 2 /OUTPUT 1 "VerdeB";
+L_000002487310dfe0 .functor BUFZ 1, v000002487310df40_0, C4<0>, C4<0>, C4<0>;
+L_000002487310e150 .functor NOT 1, v000002487310df40_0, C4<0>, C4<0>, C4<0>;
+v000002487310d870_0 .net "A", 0 0, v000002487310df40_0;  1 drivers
+v0000024873253160_0 .net "VerdeA", 0 0, L_000002487310dfe0;  alias, 1 drivers
+v000002487310e0b0_0 .net "VerdeB", 0 0, L_000002487310e150;  alias, 1 drivers
+    .scope S_00000248731085c0;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "semaforo_tb.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000248731085c0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002487310df40_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002487310df40_0, 0, 1;
+    %delay 20, 0;
+    %vpi_call 2 17 "$display", "Teste completo" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "semaforo_tb.v";
+    "./semafaro.v";
