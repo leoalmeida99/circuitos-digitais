@@ -1,111 +1,42 @@
 #! /c/Source/iverilog-install/bin/vvp
 :ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
 :ivl_delay_selection "TYPICAL";
-:vpi_time_precision - 9;
+:vpi_time_precision + 0;
 :vpi_module "C:\iverilog\lib\ivl\system.vpi";
 :vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
 :vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
-S_000001b66293bc70 .scope module, "fila_prioridade_tb" "fila_prioridade_tb" 2 4;
- .timescale -9 -9;
-v000001b6629efa30_0 .var "Alexa", 0 0;
-v000001b6629efbc0_0 .var "PC", 0 0;
-v000001b6629f07a0_0 .var "TV", 0 0;
-v000001b6629f02a0_0 .net "s1", 0 0, L_000001b6629a5e60;  1 drivers
-v000001b6629f0020_0 .net "s2", 0 0, L_000001b6629a4140;  1 drivers
-v000001b6629efd00_0 .net "s3", 0 0, L_000001b6629a4060;  1 drivers
-S_000001b6629a5a50 .scope module, "uut" "fila_prioridade" 2 8, 3 1 0, S_000001b66293bc70;
- .timescale -9 -9;
+S_000001b2b96226e0 .scope module, "fila_prioridade" "fila_prioridade" 2 1;
+ .timescale 0 0;
     .port_info 0 /INPUT 1 "TV";
     .port_info 1 /INPUT 1 "PC";
     .port_info 2 /INPUT 1 "Alexa";
     .port_info 3 /OUTPUT 1 "s1";
     .port_info 4 /OUTPUT 1 "s2";
     .port_info 5 /OUTPUT 1 "s3";
-L_000001b6629a5e60 .functor BUFZ 1, v000001b6629f07a0_0, C4<0>, C4<0>, C4<0>;
-L_000001b662938e40 .functor NOT 1, v000001b6629f07a0_0, C4<0>, C4<0>, C4<0>;
-L_000001b6629a4140 .functor AND 1, L_000001b662938e40, v000001b6629efbc0_0, C4<1>, C4<1>;
-L_000001b6629a41b0 .functor NOT 1, v000001b6629f07a0_0, C4<0>, C4<0>, C4<0>;
-L_000001b6629a3b20 .functor NOT 1, v000001b6629efbc0_0, C4<0>, C4<0>, C4<0>;
-L_000001b6629a3f10 .functor AND 1, L_000001b6629a41b0, L_000001b6629a3b20, C4<1>, C4<1>;
-L_000001b6629a4060 .functor AND 1, L_000001b6629a3f10, v000001b6629efa30_0, C4<1>, C4<1>;
-v000001b66293be00_0 .net "Alexa", 0 0, v000001b6629efa30_0;  1 drivers
-v000001b662973160_0 .net "PC", 0 0, v000001b6629efbc0_0;  1 drivers
-v000001b662938da0_0 .net "TV", 0 0, v000001b6629f07a0_0;  1 drivers
-v000001b6629a5be0_0 .net *"_ivl_10", 0 0, L_000001b6629a3f10;  1 drivers
-v000001b6629a5c80_0 .net *"_ivl_2", 0 0, L_000001b662938e40;  1 drivers
-v000001b6629a5d20_0 .net *"_ivl_6", 0 0, L_000001b6629a41b0;  1 drivers
-v000001b6629a5dc0_0 .net *"_ivl_8", 0 0, L_000001b6629a3b20;  1 drivers
-v000001b6629ef850_0 .net "s1", 0 0, L_000001b6629a5e60;  alias, 1 drivers
-v000001b6629ef8f0_0 .net "s2", 0 0, L_000001b6629a4140;  alias, 1 drivers
-v000001b6629ef990_0 .net "s3", 0 0, L_000001b6629a4060;  alias, 1 drivers
-    .scope S_000001b66293bc70;
-T_0 ;
-    %vpi_call 2 11 "$dumpfile", "fila_prioridade.vcd" {0 0 0};
-    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001b66293bc70 {0 0 0};
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629f07a0_0, 0, 1;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629efbc0_0, 0, 1;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629efa30_0, 0, 1;
-    %delay 20, 0;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629f07a0_0, 0, 1;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629efbc0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629efa30_0, 0, 1;
-    %delay 20, 0;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629f07a0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629efbc0_0, 0, 1;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629efa30_0, 0, 1;
-    %delay 20, 0;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629f07a0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629efbc0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629efa30_0, 0, 1;
-    %delay 20, 0;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629f07a0_0, 0, 1;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629efbc0_0, 0, 1;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629efa30_0, 0, 1;
-    %delay 20, 0;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629f07a0_0, 0, 1;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629efbc0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629efa30_0, 0, 1;
-    %delay 20, 0;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629f07a0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629efbc0_0, 0, 1;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6629efa30_0, 0, 1;
-    %delay 20, 0;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629f07a0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629efbc0_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6629efa30_0, 0, 1;
-    %delay 20, 0;
-    %vpi_call 2 46 "$display", "Teste completo" {0 0 0};
-    %end;
-    .thread T_0;
+o000001b2b9657038 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001b2b9656970 .functor BUFZ 1, o000001b2b9657038, C4<0>, C4<0>, C4<0>;
+L_000001b2b959e540 .functor NOT 1, o000001b2b9657038, C4<0>, C4<0>, C4<0>;
+o000001b2b9657008 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001b2b959e5b0 .functor AND 1, L_000001b2b959e540, o000001b2b9657008, C4<1>, C4<1>;
+L_000001b2b959e620 .functor NOT 1, o000001b2b9657038, C4<0>, C4<0>, C4<0>;
+L_000001b2b959e690 .functor NOT 1, o000001b2b9657008, C4<0>, C4<0>, C4<0>;
+L_000001b2b959e700 .functor AND 1, L_000001b2b959e620, L_000001b2b959e690, C4<1>, C4<1>;
+o000001b2b9656fd8 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001b2b959e770 .functor AND 1, L_000001b2b959e700, o000001b2b9656fd8, C4<1>, C4<1>;
+v000001b2b959a8a0_0 .net "Alexa", 0 0, o000001b2b9656fd8;  0 drivers
+v000001b2b96568d0_0 .net "PC", 0 0, o000001b2b9657008;  0 drivers
+v000001b2b9622870_0 .net "TV", 0 0, o000001b2b9657038;  0 drivers
+v000001b2b9622910_0 .net *"_ivl_10", 0 0, L_000001b2b959e700;  1 drivers
+v000001b2b96229b0_0 .net *"_ivl_2", 0 0, L_000001b2b959e540;  1 drivers
+v000001b2b9622a50_0 .net *"_ivl_6", 0 0, L_000001b2b959e620;  1 drivers
+v000001b2b9622af0_0 .net *"_ivl_8", 0 0, L_000001b2b959e690;  1 drivers
+v000001b2b959e2d0_0 .net "s1", 0 0, L_000001b2b9656970;  1 drivers
+v000001b2b959e370_0 .net "s2", 0 0, L_000001b2b959e5b0;  1 drivers
+v000001b2b959e4a0_0 .net "s3", 0 0, L_000001b2b959e770;  1 drivers
 # The file index is used to find the file name in the following table.
-:file_names 4;
+:file_names 3;
     "N/A";
     "<interactive>";
-    "fila_prioridade_tb.v";
-    "./fila_prioridade.v";
+    "fila_prioridade.v";
