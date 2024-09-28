@@ -1,0 +1,104 @@
+$date
+	Thu Sep 26 03:43:13 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module codificador_tb $end
+$var wire 7 ! DISPLAY [6:0] $end
+$var reg 4 " BCD [3:0] $end
+$scope module uut $end
+$var wire 4 # BCD [3:0] $end
+$var reg 7 $ DISPLAY [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1111110 $
+b0 #
+b0 "
+b1111110 !
+$end
+#10
+b110000 !
+b110000 $
+b1 "
+b1 #
+#20
+b1101101 !
+b1101101 $
+b10 "
+b10 #
+#30
+b1111001 !
+b1111001 $
+b11 "
+b11 #
+#40
+b110011 !
+b110011 $
+b100 "
+b100 #
+#50
+b1011011 !
+b1011011 $
+b101 "
+b101 #
+#60
+b1011111 !
+b1011111 $
+b110 "
+b110 #
+#70
+b1110000 !
+b1110000 $
+b111 "
+b111 #
+#80
+b1111111 !
+b1111111 $
+b1000 "
+b1000 #
+#90
+b1110011 !
+b1110011 $
+b1001 "
+b1001 #
+#100
+b1110111 !
+b1110111 $
+b1010 "
+b1010 #
+#110
+b11111 !
+b11111 $
+b1011 "
+b1011 #
+#120
+b1001110 !
+b1001110 $
+b1100 "
+b1100 #
+#130
+b111101 !
+b111101 $
+b1101 "
+b1101 #
+#140
+b1001111 !
+b1001111 $
+b1110 "
+b1110 #
+#150
+b1000111 !
+b1000111 $
+b1111 "
+b1111 #
+#160

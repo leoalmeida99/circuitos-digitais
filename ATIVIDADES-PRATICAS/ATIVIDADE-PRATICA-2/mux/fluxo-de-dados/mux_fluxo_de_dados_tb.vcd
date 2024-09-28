@@ -1,0 +1,52 @@
+$date
+	Fri Sep 13 09:32:30 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module mux_fluxo_de_dados_tb $end
+$var wire 1 ! Y $end
+$var reg 1 " D0 $end
+$var reg 1 # D1 $end
+$var reg 1 $ D2 $end
+$var reg 1 % D3 $end
+$var reg 1 & S0 $end
+$var reg 1 ' S1 $end
+$scope module uut $end
+$var wire 1 " D0 $end
+$var wire 1 # D1 $end
+$var wire 1 $ D2 $end
+$var wire 1 % D3 $end
+$var wire 1 & S0 $end
+$var wire 1 ' S1 $end
+$var wire 1 ! Y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0'
+0&
+x%
+x$
+x#
+1"
+1!
+$end
+#20
+1'
+1#
+#40
+0'
+1&
+1$
+#60
+1'
+1%
+#80
