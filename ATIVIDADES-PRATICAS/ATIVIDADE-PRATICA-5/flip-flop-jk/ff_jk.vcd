@@ -1,0 +1,157 @@
+$date
+	Fri Nov 01 23:40:54 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ff_jk_tb $end
+$var wire 1 ! qNot $end
+$var wire 1 " q $end
+$var reg 1 # clear $end
+$var reg 1 $ clk $end
+$var reg 1 % j $end
+$var reg 1 & k $end
+$var reg 1 ' preset $end
+$scope module uut $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 % j $end
+$var wire 1 & k $end
+$var wire 1 ' preset $end
+$var wire 1 ! qNot $end
+$var reg 1 " q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0'
+0&
+0%
+0$
+0#
+x"
+x!
+$end
+#10
+1$
+#20
+0$
+1#
+#30
+0!
+1"
+1$
+#40
+0$
+1'
+0#
+#50
+1!
+0"
+1$
+#60
+0$
+1#
+#70
+1$
+#80
+0$
+1&
+0'
+0#
+#90
+x!
+x"
+1$
+#100
+0$
+1#
+#110
+0!
+1"
+1$
+#120
+0$
+1'
+0#
+#130
+1!
+0"
+1$
+#140
+0$
+1#
+#150
+1$
+#160
+0$
+1%
+0&
+0'
+0#
+#170
+x!
+x"
+1$
+#180
+0$
+1#
+#190
+0!
+1"
+1$
+#200
+0$
+1'
+0#
+#210
+1!
+0"
+1$
+#220
+0$
+1#
+#230
+0!
+1"
+1$
+#240
+0$
+1&
+0'
+0#
+#250
+x!
+x"
+1$
+#260
+0$
+1#
+#270
+0!
+1"
+1$
+#280
+0$
+1'
+0#
+#290
+1!
+0"
+1$
+#300
+0$
+1#
+#310
+0!
+1"
+1$
+#320
+0$

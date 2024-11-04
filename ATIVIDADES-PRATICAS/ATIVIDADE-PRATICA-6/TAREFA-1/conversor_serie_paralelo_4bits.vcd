@@ -1,0 +1,129 @@
+$date
+	Sun Nov 03 22:48:55 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module conversor_serie_paralelo_4bits_tb $end
+$var wire 4 ! q [3:0] $end
+$var reg 1 " clear $end
+$var reg 1 # clk $end
+$var reg 1 $ d $end
+$var reg 1 % preset $end
+$scope module uut $end
+$var wire 1 " clear $end
+$var wire 1 # clk $end
+$var wire 1 $ d $end
+$var wire 1 % preset $end
+$var wire 4 & q [3:0] $end
+$scope module ffd1 $end
+$var wire 1 " clear $end
+$var wire 1 # clk $end
+$var wire 1 $ d $end
+$var wire 1 % preset $end
+$var reg 1 ' q $end
+$upscope $end
+$scope module ffd2 $end
+$var wire 1 " clear $end
+$var wire 1 # clk $end
+$var wire 1 ( d $end
+$var wire 1 % preset $end
+$var reg 1 ) q $end
+$upscope $end
+$scope module ffd3 $end
+$var wire 1 " clear $end
+$var wire 1 # clk $end
+$var wire 1 * d $end
+$var wire 1 % preset $end
+$var reg 1 + q $end
+$upscope $end
+$scope module ffd4 $end
+$var wire 1 " clear $end
+$var wire 1 # clk $end
+$var wire 1 , d $end
+$var wire 1 % preset $end
+$var reg 1 - q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+b0 &
+1%
+1$
+0#
+0"
+b0 !
+$end
+#10
+1#
+#20
+1(
+b1000 !
+b1000 &
+1'
+0#
+1"
+#30
+1#
+#40
+0(
+1*
+0'
+b100 !
+b100 &
+1)
+0#
+0$
+#50
+1#
+#60
+1,
+0*
+1(
+1+
+0)
+b1010 !
+b1010 &
+1'
+0#
+1$
+#70
+1#
+#80
+0(
+1*
+0,
+0'
+1)
+0+
+b101 !
+b101 &
+1-
+0#
+0$
+#90
+1#
+#100
+1,
+0*
+0-
+1+
+b10 !
+b10 &
+0)
+0#

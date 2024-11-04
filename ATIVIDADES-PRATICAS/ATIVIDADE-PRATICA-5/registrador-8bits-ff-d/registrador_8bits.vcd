@@ -1,0 +1,337 @@
+$date
+	Sat Nov 02 23:04:20 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module registrador_8bits_tb $end
+$var wire 8 ! qneg [7:0] $end
+$var wire 8 " q [7:0] $end
+$var reg 1 # clear $end
+$var reg 1 $ clk $end
+$var reg 8 % d [7:0] $end
+$var reg 1 & preset $end
+$scope module uut $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 8 ' d [7:0] $end
+$var wire 1 & preset $end
+$var wire 8 ( qneg [7:0] $end
+$var wire 8 ) q [7:0] $end
+$scope module ff1 $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 * d $end
+$var wire 1 & preset $end
+$var reg 1 + q $end
+$var reg 1 , qNot $end
+$upscope $end
+$scope module ff2 $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 - d $end
+$var wire 1 & preset $end
+$var reg 1 . q $end
+$var reg 1 / qNot $end
+$upscope $end
+$scope module ff3 $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 0 d $end
+$var wire 1 & preset $end
+$var reg 1 1 q $end
+$var reg 1 2 qNot $end
+$upscope $end
+$scope module ff4 $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 3 d $end
+$var wire 1 & preset $end
+$var reg 1 4 q $end
+$var reg 1 5 qNot $end
+$upscope $end
+$scope module ff5 $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 6 d $end
+$var wire 1 & preset $end
+$var reg 1 7 q $end
+$var reg 1 8 qNot $end
+$upscope $end
+$scope module ff6 $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 9 d $end
+$var wire 1 & preset $end
+$var reg 1 : q $end
+$var reg 1 ; qNot $end
+$upscope $end
+$scope module ff7 $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 < d $end
+$var wire 1 & preset $end
+$var reg 1 = q $end
+$var reg 1 > qNot $end
+$upscope $end
+$scope module ff8 $end
+$var wire 1 # clear $end
+$var wire 1 $ clk $end
+$var wire 1 ? d $end
+$var wire 1 & preset $end
+$var reg 1 @ q $end
+$var reg 1 A qNot $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1A
+0@
+0?
+1>
+0=
+0<
+1;
+0:
+09
+18
+07
+06
+15
+04
+03
+12
+01
+00
+1/
+0.
+0-
+1,
+0+
+0*
+b0 )
+b11111111 (
+b0 '
+0&
+b0 %
+0$
+0#
+b0 "
+b11111111 !
+$end
+#10
+1$
+#20
+0A
+1@
+0>
+1=
+0;
+1:
+08
+17
+05
+14
+02
+11
+0/
+1.
+b0 !
+b0 (
+0,
+b11111111 "
+b11111111 )
+1+
+1*
+1-
+10
+13
+16
+19
+1<
+1?
+0$
+b11111111 %
+b11111111 '
+#30
+1$
+#40
+1,
+0+
+12
+01
+18
+07
+b1010101 !
+b1010101 (
+1>
+b10101010 "
+b10101010 )
+0=
+0*
+00
+06
+0<
+0$
+b10101010 %
+b10101010 '
+#50
+1$
+#60
+0>
+1=
+08
+17
+02
+11
+b0 !
+b0 (
+0,
+b11111111 "
+b11111111 )
+1+
+0-
+03
+09
+0?
+0$
+b0 %
+b0 '
+1&
+#70
+1$
+#80
+1*
+1-
+10
+13
+16
+19
+1<
+1?
+0$
+b11111111 %
+b11111111 '
+#90
+1$
+#100
+0-
+03
+09
+0?
+0$
+b1010101 %
+b1010101 '
+#110
+1$
+#120
+1,
+0+
+1/
+0.
+12
+01
+15
+04
+18
+07
+1;
+0:
+1>
+0=
+b11111111 !
+b11111111 (
+1A
+b0 "
+b0 )
+0@
+0*
+00
+06
+0<
+0$
+b0 %
+b0 '
+1#
+0&
+#130
+1$
+#140
+1*
+1-
+10
+13
+16
+19
+1<
+1?
+0$
+b11111111 %
+b11111111 '
+#150
+1$
+#160
+00
+03
+0<
+0?
+0$
+b110011 %
+b110011 '
+#170
+1$
+#180
+xA
+x@
+x>
+x=
+x;
+x:
+x8
+x7
+x5
+x4
+x2
+x1
+x/
+x.
+bx !
+bx (
+x,
+bx "
+bx )
+x+
+0*
+0-
+06
+09
+0$
+b0 %
+b0 '
+1&
+#190
+1$
+#200
+1*
+1-
+10
+13
+16
+19
+1<
+1?
+0$
+b11111111 %
+b11111111 '
+#210
+1$
+#220
+0$
