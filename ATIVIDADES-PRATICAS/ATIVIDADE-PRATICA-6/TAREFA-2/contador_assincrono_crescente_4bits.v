@@ -1,13 +1,13 @@
-`include "ff_jk.v"
+`include "ff_t.v"
 
-module contador_assincrono_crescente_4bits (clk, T, clear, q0, q1, q2, q3);
+module contador_assincrono_crescente_4bits (clk, T, clear, q);
 
-    output q0, q1, q2, q3;
+    output [3:0] q;
     input clk, T, clear;
 
-    ff_jk ff_jk_1 (clk, T, clear, q0);
-    ff_jk ff_jk_2 (q0, T, clear, q1);
-    ff_jk ff_jk_3 (q1, T, clear, q2);
-    ff_jk ff_jk_4 (q2, T, clear, q3);
+    ff_t ff_t_1 (clk, T, clear, q[0]);
+    ff_t ff_t_2 (q[0], T, clear, q[1]);
+    ff_t ff_t_3 (q[1], T, clear, q[2]);
+    ff_t ff_t_4 (q[2], T, clear, q[3]);
 
 endmodule

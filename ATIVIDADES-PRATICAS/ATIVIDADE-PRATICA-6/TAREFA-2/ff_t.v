@@ -1,4 +1,4 @@
-module ff_jk (clk, T, clear, q);
+module ff_t (clk, T, clear, q);
 
     input wire clk, T, clear;
     output reg q;
@@ -8,6 +8,8 @@ module ff_jk (clk, T, clear, q);
             q = 0;
         else 
             if (T)
+                q = ~q;
+            else
                 q = q;
     end
 
